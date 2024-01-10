@@ -1,0 +1,148 @@
+body {
+    background-color: beige;
+}
+*{
+    font-family:'Courier New', Courier, monospace;
+    
+}
+.hide{
+    display: none;
+}
+.center{
+    text-align: center;
+}
+#backgroundimg {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-2/pattern.jpeg');
+}
+.headerclass{
+    color: rgb(255, 255, 0);
+    font-size: 100px;
+    margin-top: 20px;
+    width: 100%;
+    
+}
+.welcome{
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+}
+.welcome strong{
+    color: skyblue;
+}
+.welcome p{
+    font-size: 20px;
+    margin: 0 30px;
+}
+ul.navlist{
+    padding: 10px;
+    
+}
+.navlist li{
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 10px;
+    font-size: 30px;    
+    border: solid skyblue 1px;
+    background-color: skyblue;
+    border-radius: 5px;
+    width: 200px;
+    clear: both;
+}
+.navlist li:hover{
+    background-color: aqua;
+}
+.navlist li a{
+    text-decoration: none;
+    color: white;
+
+}
+.brushesframespaint{
+    font-size: 50px;
+    color: skyblue;
+    margin-top: 300px;
+
+}
+
+.bfpmore{
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+
+/*mobiles and tablet*/
+@media screen and (max-width: 959px){
+    header{
+        min-height: 150px;
+        max-height: 325px;
+    }
+    .brushessect{
+        position: relative;
+        top: 400px;
+        text-align: center;
+    }
+
+    .bfpimg img{
+        width: 400px;
+    }
+    .framessect{
+        position: relative;
+        top: 200px;
+        text-align: center;
+    }
+    #frames{
+        text-align: center;
+    }
+    .paintsect{
+        text-align: center;
+    }
+    #paint{
+        text-align: center;
+    }
+
+
+}
+
+/*Desktop*/
+@media screen and (min-width: 960px){
+    header{
+        height: 150px;
+    }
+    #backgroundimg{
+        height: 150px;
+        width: 100%;
+    }
+    #backgroundimg{
+        position: fixed;
+        z-index: 10;
+        top: -10px
+    }
+    .intro{
+        position: relative;
+        top: 125px;
+    }
+    #brushes{
+        margin-left: 50px;
+    }
+    .bfpimg img{
+        float: left;
+        margin-left: 10px;
+        margin-top: -30px;
+        padding: 0;
+    }
+    .bfpmore{
+        padding: 10px 0;
+        width: 90%;
+        position: relative;
+        left: 20px;
+        
+    }
+    #frames{
+        margin-left: 50px;
+    }
+    #paint{
+        margin-left: 50px;
+    }
+
+
+}
+
